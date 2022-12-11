@@ -14,6 +14,6 @@
 
 6. Answer on messaging.yaml
 
-7. kubectl create deployment hr-web-app --image=kodekloud/webapp-color --replicas=2
+7. kubectl create deployment hr-web-app --image=kodekloud/webapp-color --replicas=2 [another soultion on yaml]
 
  
