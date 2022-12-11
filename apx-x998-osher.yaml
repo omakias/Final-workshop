@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: temp-bus
+  namespace: apx-x998-osher
+  labels:
+    name: temp-bus
+spec:
+  containers:
+  - name: temp-bus
+    image: redis:alpine
