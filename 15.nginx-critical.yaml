@@ -1,3 +1,8 @@
+##########  kubectl run nginx-critical --image=nginx --dry-run=client  -o yaml  ############
+########## using the POD Manifest file  ##########################
+########## Copy the content and create a file nginx-critical.yaml under /etc/kubernetes/manifests  ############
+
+
 apiVersion: v1
 kind: Pod
 metadata:
