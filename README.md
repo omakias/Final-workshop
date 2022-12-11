@@ -1,17 +1,17 @@
- kubectl run nginx-pod-osher --image=nginx:alpine
+-1- kubectl run nginx-pod-osher --image=nginx:alpine
 
- kubectl run messaging --image=redis:alpine --labels="tier=msg"
+-2- kubectl run messaging --image=redis:alpine --labels="tier=msg"
 
-kubectl create namespace apx-x998-osher
+-3- kubectl create namespace apx-x998-osher
 
- kubectl get nodes -ojson 
+-4- kubectl get nodes -ojson 
 
- kubectl create service clusterip messaging-service --tcp=6379:6379 
+-5.1- kubectl create service clusterip messaging-service --tcp=6379:6379 
 
-kubectl label service  messaging-service tier=msg
+-5.2- kubectl label service  messaging-service tier=msg
 
-Answer on messaging.yaml
+-6- Answer on messaging.yaml
 
-kubectl create deployment hr-web-app --image=kodekloud/webapp-color --replicas=2 [another soultion on yaml]
+-7- kubectl create deployment hr-web-app --image=kodekloud/webapp-color --replicas=2 [another soultion on yaml]
 
  
