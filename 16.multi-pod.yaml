@@ -10,5 +10,6 @@ spec:
    - containerPort: 80
  - name: beta
    image: busybox
+   command: ["sleep","4800"]
    ports: 
    - containerPort: 8080
