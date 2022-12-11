@@ -1,0 +1,17 @@
+1.  Get pods with label information - kubectl get pod --show-labels
+
+2.  Create 5 nginx pods in which two of them is labeled env=prod and three of them is
+    labeled env=dev
+#########################################################################################
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    env: prod
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    ports:
+    - containerPort: 80
