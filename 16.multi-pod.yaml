@@ -10,6 +10,7 @@ spec:
    - containerPort: 80
  - name: beta
    image: busybox
-   command: ["sleep","4800"]
+   command: ["/bin/sh"]
+   args: ["-c", "while true; do echo hello; sleep 4800;done"]
    ports: 
    - containerPort: 8080
