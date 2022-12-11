@@ -1,0 +1,15 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: nginx-resolver-service
+  labels:
+    app: nginx-resolver-service
+spec:
+  selector:
+    app: nginx-resolver-service
+  ports:   
+  - name: nginx-resolver-service
+    protocol: TCP
+    port: 80
+    targetPort: 8080
+  type: LoadBalancer
