@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: redis-storage-osher
+spec:
+  containers:
+  - name: redis-storage-osher
+    image: redis:alpine
+    volumeMounts:
+    - name: redis-storage-osher
+      mountPath: /data/redis
+  volumes:
+  - name: redis-storage-osher
+    emptyDir: {}
