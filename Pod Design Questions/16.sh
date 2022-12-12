@@ -9,9 +9,10 @@ spec:
   containers:
   - image: nginx
     name: nginx
+  nodeSelector:
+    nodeName: nginxnode
     resources: {}
 dnsPolicy: ClusterFirst
 restartPolicy: Never
 status: {}
-  nodeSelector:
-    nodeName: nginxnode
+
