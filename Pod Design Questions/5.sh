@@ -1,1 +1,1 @@
-kubectl get pods --show-labels
+kubectl get pods -l environment=dev --show-labels
