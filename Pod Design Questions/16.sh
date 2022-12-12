@@ -1,10 +1,9 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  creationTimestamp: null
+  name: nginx
   labels:
     run: nginx
-    name: nginx
 spec:
   containers:
   - image: nginx
