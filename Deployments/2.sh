@@ -1,1 +1,1 @@
-kubectl rollout status deployment/webapp
+kubectl rollout status -w deployment/webapp
