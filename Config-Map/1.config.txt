@@ -1,0 +1,6 @@
+cat >> config.txt << EOF
+key1=value1
+key2=value2
+EOF
+################# Verify  ######################
+cat config.txt
